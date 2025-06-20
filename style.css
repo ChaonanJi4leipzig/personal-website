@@ -113,4 +113,23 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+.contact-icons {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  filter: none;
+  transition: filter 0.2s, transform 0.2s;
+  /* Use CSS filter to approximate #1C8962 for SVG icons */
+  filter: invert(41%) sepia(94%) saturate(355%) hue-rotate(104deg) brightness(92%) contrast(92%);
+}
+.icon:hover {
+  filter: invert(41%) sepia(94%) saturate(355%) hue-rotate(104deg) brightness(110%) contrast(110%) drop-shadow(0 0 4px #1C8962);
+  transform: scale(1.12);
 } 
